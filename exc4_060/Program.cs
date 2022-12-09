@@ -8,8 +8,13 @@ namespace exc4_060
 {
     class Node
     {
-        static void Main(string[] args)
+        public int info;
+        public Node
+        public Node(int i, Node n)
         {
+            info = i;
+            next = n;
         }
     }
+    class Stacks
 }
