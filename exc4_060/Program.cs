@@ -9,7 +9,7 @@ namespace exc4_060
     class Node
     {
         public int info;
-        public Node
+        public Node next;
         public Node(int i, Node n)
         {
             info = i;
@@ -39,6 +39,11 @@ namespace exc4_060
             Console.WriteLine("\n" + element + "Pushed.");
         }
         public void pop()
+        {
+            Console.WriteLine("\nThe pooped element is: " + top.info);
+            top = top.next;
+        }
+        public void display()
         {
 
         }
