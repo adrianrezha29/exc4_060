@@ -30,5 +30,6 @@ namespace exc4_060
             else
                 return (false);
         }
+        public void push(int element)
     }
 }
