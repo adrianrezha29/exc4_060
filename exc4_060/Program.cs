@@ -87,6 +87,10 @@ namespace exc4_060
                         }
                         s.pop();
                         break;
+                    case '3':
+                        Console.WriteLine("------- Display -------");
+                        s.display();
+                        break;
                 }
             }
         }
