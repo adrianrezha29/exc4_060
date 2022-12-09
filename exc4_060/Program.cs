@@ -32,10 +32,10 @@ namespace exc4_060
         }
         public void push(int element)
         {
-            Node fresh;
-            fresh = new Node(element, null);
-            fresh.next = top;
-            top = fresh;
+            Node rezha;
+            rezha = new Node(element, null);
+            rezha.next = top;
+            top = rezha;
             Console.WriteLine("\n" + element + "Pushed.");
         }
         public void pop()
@@ -45,7 +45,27 @@ namespace exc4_060
         }
         public void display()
         {
+            Node tmp;
+            if (empty())
+                Console.WriteLine("\nStack Empty");
+            else
+            {
 
+                for (tmp = top; tmp != null; tmp = tmp.next)
+                {
+                    Console.WriteLine(tmp.info);
+                }
+                Console.WriteLine();
+            }
+        }
+        static void Main(string[] args)
+        {
+            Stacks s = new Stacks();
+            while (true)
+            {
+
+            }
+            
         }
     }
 }
