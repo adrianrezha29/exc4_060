@@ -91,6 +91,11 @@ namespace exc4_060
                         Console.WriteLine("------- Display -------");
                         s.display();
                         break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid Choice");
+                        break;
                 }
             }
         }
